@@ -62,8 +62,6 @@ resource "google_compute_firewall" "name_firewall" {
 
   # Allow access from specified IP ranges (PLDT and Converge ICT)
   source_ranges = [
-    "120.29.108.157/32", 
-    "112.202.186.237/32",
     "103.16.0.0/16",   # Converge ICT
     "120.29.64.0/19",   # Converge ICT
     "122.54.0.0/16",    # Converge ICT
